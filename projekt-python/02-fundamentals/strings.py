@@ -10,7 +10,6 @@ hello = 'Toto je dlouhý řetězec obsahující mnoho\n\
 řádek textu, stejně jej zapisujete i v C.\n\
     "Bílé" znaky na začátku řádku se samozřejmě\
  berou v úvahu.'
-
 # print(hello)
 
 '''
@@ -68,9 +67,9 @@ Na prvním řádku jsou uvedeny všechny možné slice-indexy 0...5 v řetězci 
 '''
 
 # Vypíše poslední znak z řetězce
-# print(course_name[-1])
+# print(course_name[-2])
 # Vypíše vše od 2. do 4. znaku (bez něj)
-# print(course_name[1:3])
+# print(course_name[1:-2])
 
 '''
 Slice indexy mají specifické vlastnosti. Vynecháme-li první index, je za něj automaticky dosazena nula (začátek řetězce). 
@@ -89,6 +88,8 @@ Další vlastností slice indexů je jejich automatické "zarovnávání" na roz
 Je-li totiž index použitý ve slice konstrukci příliš velký, je nahrazen délkou řetězce. 
 '''
 # print(course_name[1:50])
+a = "ahoj"
+print(a[1:5])
 # Pokud je dolní index větší než horní, je výsledkem prázdný řetězec:
 # print(course_name[2:1])
 
@@ -158,3 +159,12 @@ funkční kód, tím lepší).
 3. Vytvořte funkci, která vygeneruje náhodná hesla pro počet osob zadaný v parametru tak, aby heslo začínalo
    3 velkými písmeny, pokračovalo 3 malými písmeny, jedním speciálním znakem (-/+*) a končilo 3 náhodnými číslicemi.
 '''
+
+def datum():
+    print("Zadej datum ve tvaru den. mesic. rok")
+    datum = input()
+    x = datum.split(". ")
+    return print(f"{x[2]}-{x[1]}-{x[0]}")
+datum()
+
+def prevod():

@@ -2,12 +2,12 @@
 # Funkce provádějící kód
 
 
-def greet(first_name, last_name):
+def greet(first_name="Grzegorz", last_name="Brzeczisczikiewicz"):
     print(f"Ahoj {first_name} {last_name}")
     print("To je pozdrav z funkce")
 
 
-greet("Vladimir", "Putin")
+greet("Grzegorz", "Brzeczysczikiewicz")
 
 # Funkce vracející hodnotu
 def getGreeting(name):
